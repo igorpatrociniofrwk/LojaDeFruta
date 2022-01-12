@@ -1,0 +1,20 @@
+<img src="../../assets/banners/29854.jpg" style="width:100%"/>
+
+<div class="bodyHome">
+  <div class="row">
+    <div>
+        <h3 style="text-align: center;">Login </h3> <br>
+        <p style="text-align: center;">Entre para ter acesso ao programa</p>
+    </div>
+    <div class="input-field col s12 center">
+        <label for="email">Email:</label>
+        <input [(ngModel)]="usuario.email" type="email" id="username" name="email" class="validate" required style="width: 210px;">
+        <label for="senha">Senha:</label>
+        <input [(ngModel)]="usuario.senha" type="password" id="senha" name="senha" class="validate" required style="width: 210px;">
+        <br><br>
+        <button type="submit" class="btn" name="action" (click)="fazerLogin()">
+          Login
+        </button>
+     </div>  
+  </div>
+</div>
