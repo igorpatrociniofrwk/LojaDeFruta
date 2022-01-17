@@ -18,7 +18,6 @@ export class HomeComponent implements OnInit {
 
     this.ofertasService.getOfertas()
     .subscribe(res => this.ofertas = res);
-    console.log(this.ofertas)
   }
 
 }

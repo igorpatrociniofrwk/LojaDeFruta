@@ -27,11 +27,13 @@ class CarrinhoService {
 
     }
     public totalCarrinhoCompras(): number {
-        let total: number = 0
-        this.itens.map((item: ItemCarrinho) => {
+        let total: number = 0;
+
+        this.itens.forEach((item: ItemCarrinho) => {
             total = total + (item.valor * item.quantidade)
-        })
-        return total
+        });
+
+        return total;
     }
     public adicionarQuantidade(itemCarrinho: ItemCarrinho): void {
         let itemCarrinhoEncontrado = this.itens.find((item: ItemCarrinho) => item.id === itemCarrinho.id)

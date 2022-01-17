@@ -68,17 +68,6 @@ export class OrdemCompraComponent implements OnInit {
         this.idPedidoCompra = x.id;
       });
     }
-
-    /* this.pedido = new Pedido(
-      this.formulario.value.endereco,
-      this.formulario.value.numero,
-      this.formulario.value.complemento,
-      this.formulario.value.formaPagamento)
-
-    this.ordemCompraService.efetivaCompra(this.pedido).subscribe(x => {
-      console.log(x);
-      this.idPedidoCompra = x.id;
-    }); */
   }
 
   public adicionar(item: ItemCarrinho): void {

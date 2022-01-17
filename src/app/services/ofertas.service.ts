@@ -18,7 +18,7 @@ export class OfertasService {
     }
 
     public getOfertasCategoria(categoria: string) {
-        return this.http.get<Oferta[]>(`${URL_API}/categoria=${categoria}`)
+        return this.http.get<Oferta[]>(`${URL_API}/ofertas?categoria=${categoria}`)
     }
 
     public getOfertaPorId(id: number) {
@@ -26,7 +26,7 @@ export class OfertasService {
     }
 
     public pesquisaOferta(termo: string): Observable<Oferta[]> {
-        return this.http.get<Oferta[]>(`${URL_API}?descricao_oferta_like=${termo}`)
+        return this.http.get<Oferta[]>(`${URL_API}/ofertas?descricao_oferta_like=${termo}`)
         .pipe((resposta: any) => resposta);
     }
 }

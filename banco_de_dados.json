@@ -6,7 +6,7 @@
       "titulo": "Maçã",
       "descricao_oferta": "Maçã fresquinha para consumo.",
       "anunciante": "Hortifrutas",
-      "valor": 29.9,
+      "valor": 5.9,
       "destaque": true,
       "imagens": [
         {
@@ -23,7 +23,7 @@
       "titulo": "Pera",
       "descricao_oferta": "Pera fresquinha para consumo.",
       "anunciante": "Hortifrutas",
-      "valor": 32.9,
+      "valor": 6.9,
       "destaque": true,
       "imagens": [
         {
@@ -40,7 +40,7 @@
       "titulo": "Banana",
       "descricao_oferta": "Banana fresquinha para consumo.",
       "anunciante": "Hortifrutas",
-      "valor": 21.9,
+      "valor": 3.9,
       "destaque": false,
       "imagens": [
         {
@@ -57,7 +57,7 @@
       "titulo": "Alface",
       "descricao_oferta": "Alface fresquinho para consumo.",
       "anunciante": "Saladshortis",
-      "valor": 31.9,
+      "valor": 4.9,
       "destaque": true,
       "imagens": [
         {
@@ -74,7 +74,7 @@
       "titulo": "Tomate",
       "descricao_oferta": "Tomate fresquinho para consumo.",
       "anunciante": "Saladshortis",
-      "valor": 54.9,
+      "valor": 5.9,
       "destaque": false,
       "imagens": [
         {
@@ -91,7 +91,7 @@
       "titulo": "Cenoura",
       "descricao_oferta": "Cenoura fresquinha para consumo.",
       "anunciante": "Saladshortis",
-      "valor": 89.9,
+      "valor": 9.9,
       "destaque": false,
       "imagens": [
         {
@@ -105,68 +105,29 @@
   ],
   "pedidos": [
     {
-      "endereco": "Rua ABC",
-      "numero": "10",
-      "complemento": "Casa 2",
-      "formaPagamento": "dinheiro",
-      "id": 1
-    },
-    {
-      "endereco": "Rua teste",
-      "numero": "5",
-      "complemento": "",
-      "formaPagamento": "debito",
-      "id": 2
-    },
-    {
-      "endereco": "Rua 10",
-      "numero": "3",
-      "complemento": "Casa X",
-      "formaPagamento": "dinheiro",
-      "id": 3
-    },
-    {
-      "endereco": "Rua Teste",
-      "numero": "50",
-      "complemento": "Casa A",
-      "formaPagamento": "debito",
-      "id": 4
-    },
-    {
-      "endereco": "Rua Maria das Flores",
-      "numero": "125",
-      "complemento": "Casa A",
-      "formaPagamento": "dinheiro",
-      "id": 5
-    },
-    {
-      "endereco": "Rua Maria das Flores",
-      "numero": "155",
-      "complemento": "Casa 2",
-      "formaPagamento": "dinheiro",
-      "id": 6
-    },
-    {
-      "endereco": "Rua Programadores da Silva",
-      "numero": "256",
-      "complemento": null,
-      "formaPagamento": "dinheiro",
-      "id": 7
-    },
-    {
-      "endereco": "Rua teste",
-      "numero": "10",
-      "complemento": null,
+      "endereco": "ru aq ",
+      "numero": "45",
+      "complemento": "45",
       "formaPagamento": "dinheiro",
       "itens": [
         {
-          "id": 1,
+          "id": 3,
           "img": {
-            "url": "/assets/ofertas/1/img1.jpg"
+            "url": "/assets/ofertas/3/img1.jpg"
           },
-          "titulo": "Super Burger",
-          "descricao_oferta": "Rodízio de Mini-hambúrger com opção de entrada.",
-          "valor": 29.9,
+          "titulo": "Banana",
+          "descricao_oferta": "Banana fresquinha para consumo.",
+          "valor": 3.9,
+          "quantidade": 2
+        },
+        {
+          "id": 4,
+          "img": {
+            "url": "/assets/ofertas/4/img1.jpg"
+          },
+          "titulo": "Alface",
+          "descricao_oferta": "Alface fresquinho para consumo.",
+          "valor": 4.9,
           "quantidade": 1
         },
         {
@@ -174,32 +135,51 @@
           "img": {
             "url": "/assets/ofertas/2/img1.jpg"
           },
-          "titulo": "Cozinha Mexicana",
-          "descricao_oferta": "Almoço ou Jantar com Rodízio Mexicano delicioso.",
-          "valor": 32.9,
-          "quantidade": 2
+          "titulo": "Pera",
+          "descricao_oferta": "Pera fresquinha para consumo.",
+          "valor": 6.9,
+          "quantidade": 1
         }
       ],
-      "id": 8
+      "id": 1
     },
     {
-      "endereco": "Rua teste",
-      "numero": "1",
-      "complemento": null,
+      "endereco": "ad ds",
+      "numero": "23",
+      "complemento": "324",
       "formaPagamento": "dinheiro",
       "itens": [
         {
           "id": 1,
           "img": {
-            "url": "/assets/ofertas/1/img1.jpg"
+            "url": "./assets/ofertas/1/img1.jpg"
           },
-          "titulo": "Super Burger",
-          "descricao_oferta": "Rodízio de Mini-hambúrger com opção de entrada.",
-          "valor": 29.9,
+          "titulo": "Maçã",
+          "descricao_oferta": "Maçã fresquinha para consumo.",
+          "valor": 5.9,
           "quantidade": 1
         }
       ],
-      "id": 9
+      "id": 2
+    },
+    {
+      "endereco": "asd sadas",
+      "numero": "d",
+      "complemento": "w ",
+      "formaPagamento": "dinheiro",
+      "itens": [
+        {
+          "id": 1,
+          "img": {
+            "url": "./assets/ofertas/1/img1.jpg"
+          },
+          "titulo": "Maçã",
+          "descricao_oferta": "Maçã fresquinha para consumo.",
+          "valor": 5.9,
+          "quantidade": 2
+        }
+      ],
+      "id": 3
     }
   ]
 }
