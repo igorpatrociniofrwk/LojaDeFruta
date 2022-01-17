@@ -19,10 +19,10 @@ export class FrutasComponent implements OnInit {
   constructor(private ofertasService: OfertasService) { }
 
   ngOnInit() {
-    this.ofertaPorCategoria = this.ofertasService.getOfertasPorCategoria('frutas')
-    console.log(this.ofertaPorCategoria)
-/*       console.log(ofertas)
-      this.ofertas = ofertas */
+    this.ofertasService.getOfertasCategoria('frutas')
+    .subscribe(res => this.ofertas = res)
+    console.log(this.ofertas)
+
   }
 
 }

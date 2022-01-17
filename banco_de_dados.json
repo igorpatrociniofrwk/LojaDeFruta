@@ -3,9 +3,9 @@
     {
       "id": 1,
       "categoria": "frutas",
-      "titulo": "Super Burger",
-      "descricao_oferta": "Rodízio de Mini-hambúrger com opção de entrada.",
-      "anunciante": "Original Burger",
+      "titulo": "Maçã",
+      "descricao_oferta": "Maçã fresquinha para consumo.",
+      "anunciante": "Hortifrutas",
       "valor": 29.9,
       "destaque": true,
       "imagens": [
@@ -20,9 +20,9 @@
     {
       "id": 2,
       "categoria": "frutas",
-      "titulo": "Cozinha Mexicana",
-      "descricao_oferta": "Almoço ou Jantar com Rodízio Mexicano delicioso.",
-      "anunciante": "Mexicana",
+      "titulo": "Pera",
+      "descricao_oferta": "Pera fresquinha para consumo.",
+      "anunciante": "Hortifrutas",
       "valor": 32.9,
       "destaque": true,
       "imagens": [
@@ -37,9 +37,9 @@
     {
       "id": 3,
       "categoria": "frutas",
-      "titulo": "Pizzas Grandes",
-      "descricao_oferta": "Pizza Grande, Mussarela, Marguerita ou outras!",
-      "anunciante": "Nossa Pizza",
+      "titulo": "Banana",
+      "descricao_oferta": "Banana fresquinha para consumo.",
+      "anunciante": "Hortifrutas",
       "valor": 21.9,
       "destaque": false,
       "imagens": [
@@ -54,9 +54,9 @@
     {
       "id": 4,
       "categoria": "salada",
-      "titulo": "Estância das águas",
-      "descricao_oferta": "Diversão garantida com piscinas, trilhas e muito mais.",
-      "anunciante": "Estância das águas",
+      "titulo": "Alface",
+      "descricao_oferta": "Alface fresquinho para consumo.",
+      "anunciante": "Saladshortis",
       "valor": 31.9,
       "destaque": true,
       "imagens": [
@@ -71,9 +71,9 @@
     {
       "id": 5,
       "categoria": "salada",
-      "titulo": "Kart",
-      "descricao_oferta": "Bateria de Kart de 30 minutos.",
-      "anunciante": "Speed Kart",
+      "titulo": "Tomate",
+      "descricao_oferta": "Tomate fresquinho para consumo.",
+      "anunciante": "Saladshortis",
       "valor": 54.9,
       "destaque": false,
       "imagens": [
@@ -88,9 +88,9 @@
     {
       "id": 6,
       "categoria": "salada",
-      "titulo": "Academia de tiro",
-      "descricao_oferta": "Sessão de tiro dinâmico com Instrutor, Estande, Alvo e Equipamentos.",
-      "anunciante": "Academia de Tiro",
+      "titulo": "Cenoura",
+      "descricao_oferta": "Cenoura fresquinha para consumo.",
+      "anunciante": "Saladshortis",
       "valor": 89.9,
       "destaque": false,
       "imagens": [
@@ -101,58 +101,6 @@
           "url": "/assets/ofertas/6/img2.jpg"
         }
       ]
-    }
-  ],
-  "como-usar": [
-    {
-      "id": 1,
-      "descricao": "Não é necessário agendar"
-    },
-    {
-      "id": 2,
-      "descricao": "Válido de segunda a quinta das 12h as 23h"
-    },
-    {
-      "id": 3,
-      "descricao": "Não é necessário agendar"
-    },
-    {
-      "id": 4,
-      "descricao": "Necessário agendar com no mínimo 48 horas de antecedência"
-    },
-    {
-      "id": 5,
-      "descricao": "Válido de segunda a sábado das 12h as 23h. Necessário agendamento prévio"
-    },
-    {
-      "id": 6,
-      "descricao": "Não é necessário agendar. Sujeito à fila."
-    }
-  ],
-  "onde-fica": [
-    {
-      "id": 1,
-      "descricao": "Avenida João da Silva, 255, São Paulo - SP"
-    },
-    {
-      "id": 2,
-      "descricao": "Rua Francisco Mendes, 1000, Rio de Janeiro - SP "
-    },
-    {
-      "id": 3,
-      "descricao": "Avenida Lúcio Rodrigues Alves, 33, Fortaleza - CE"
-    },
-    {
-      "id": 4,
-      "descricao": "Avenida José de Oliveira, 550, Campo Grande - MS"
-    },
-    {
-      "id": 5,
-      "descricao": "Avenida Júlia Abrão, 77, São Paulo - SP"
-    },
-    {
-      "id": 6,
-      "descricao": "Estrada Maria das Graças, 12, Salvador - BA "
     }
   ],
   "pedidos": [

@@ -13,8 +13,6 @@ import { RodapeComponent } from './components/rodape/rodape.component';
 import { FrutasComponent } from './components/frutas/frutas.component';
 import { SaladaComponent } from './components/salada/salada.component';
 import { OfertaComponent } from './components/oferta/oferta.component';
-import { ComoUsarComponent } from './components/oferta/como-usar/como-usar.component';
-import { OndeFicaComponent } from './components/oferta/onde-fica/onde-fica.component';
 import { OrdemCompraComponent } from './components/ordem-compra/ordem-compra.component';
 import { OrdemCompraSucessoComponent } from './components/ordem-compra-sucesso/ordem-compra-sucesso.component';
 
@@ -23,6 +21,10 @@ import { CarrinhoService } from './services/carrinho.service';
 import { DescricaoReduzida } from './util/descricao-reduzida.pipe';
 import { AuthService } from './components/login/auth.service';
 import { AuthGuard } from './components/guards/auth.guard';
+import { registerLocaleData } from '@angular/common';
+import localePtBr from '@angular/common/locales/pt';
+
+registerLocaleData(localePtBr)
 
 @NgModule({
   declarations: [
@@ -33,8 +35,6 @@ import { AuthGuard } from './components/guards/auth.guard';
     FrutasComponent,
     SaladaComponent,
     OfertaComponent,
-    ComoUsarComponent,
-    OndeFicaComponent,
     DescricaoReduzida,
     OrdemCompraComponent,
     OrdemCompraSucessoComponent,
@@ -48,7 +48,7 @@ import { AuthGuard } from './components/guards/auth.guard';
     RouterModule.forRoot(ROUTES)
   ],
   providers: [
-    CarrinhoService, { provide: LOCALE_ID, useValue: 'pt-Br' },
+    CarrinhoService, { provide: LOCALE_ID, useValue : 'pt-BR' },
     AuthService, 
     AuthGuard
   ],

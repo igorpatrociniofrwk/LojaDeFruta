@@ -9,7 +9,7 @@ import { OfertasService } from 'src/app/services/ofertas.service';
   styleUrls: ['./salada.component.css'],
   providers: [OfertasService]
 })
-export class SaladaComponent implements OnInit {
+/* export class SaladaComponent implements OnInit {
 
   public ofertas: Oferta[]
   public ofertaPorCategoria: any
@@ -18,10 +18,24 @@ export class SaladaComponent implements OnInit {
 
 
   ngOnInit() {
-    this.ofertaPorCategoria = this.ofertasService.getOfertasPorCategoria('salada')
+    this.ofertaPorCategoria = this.ofertasService.getOfertasCategoria('salada')
     console.log(this.ofertaPorCategoria)
-/*         console.log(ofertas)
-        this.ofertas = ofertas */
+  }
+
+} */
+
+export class SaladaComponent implements OnInit {
+  public categoria: string = 'salada';
+  public ofertas: Oferta[]; 
+
+  constructor(private ofertasService: OfertasService) { }
+
+  ngOnInit() {
+    this.ofertasService.getOfertasCategoria(this.categoria)
+    .subscribe((salada: Oferta[]) => { 
+      this.ofertas = salada;
+      console.log(this.ofertas)
+    })
   }
 
 }

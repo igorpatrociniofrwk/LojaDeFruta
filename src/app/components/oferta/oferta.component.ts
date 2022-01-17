@@ -1,15 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router'
+import { ActivatedRoute, Params } from '@angular/router'
 import { OfertasService } from 'src/app/services/ofertas.service';
 import { Oferta } from '../shared/oferta.model'
-
 import { CarrinhoService } from 'src/app/services/carrinho.service'; 
 
 @Component({
   selector: 'app-oferta',
   templateUrl: './oferta.component.html',
   styleUrls: ['./oferta.component.css'],
-  providers: [OfertasService]
+  providers: [ OfertasService ]
 })
 export class OfertaComponent implements OnInit {
   parametro: number;
@@ -23,22 +22,23 @@ export class OfertaComponent implements OnInit {
 
   ngOnInit() {
 
-    /* this.parametro = this.route.snapshot.params['id']; // pega os os parametros da url
+    /* this.parametro = this.route.snapshot.params['id'];
     console.log(this.parametro);
 
-    this.ofertasService.getOfertaPorId(this.parametro).subscribe((oferta: Oferta[])=> {
+    this.ofertasService.getOfertas().subscribe((oferta: Oferta[])=> {
       console.log(oferta[0]);
       this._oferta = oferta[0];
       this.oferta = this._oferta;
     }) */
 
-      const id = this.route.snapshot.paramMap.get("id");
+    this.route.params.subscribe((parametros: Params) => {
 
-      this.ofertasService.getOfertaPorId(parseInt(id)).then((oferta: Oferta) => {
-        console.log(oferta);
-        this._oferta = oferta;
+      this.ofertasService.getOfertaPorId(parametros['id']).subscribe((oferta: Oferta[])=> {
+        console.log(oferta[0]);
+        this._oferta = oferta[0];
         this.oferta = this._oferta;
       })
+    })
   }
 
   public adicionarItemCarrinho() {
