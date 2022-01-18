@@ -7,30 +7,21 @@
             <img src="../../assets/logo.png" />
           </a>
         </div>
-        <div class="col-md-6">
-
-          <input 
-          type="text" 
-          class="form-control" 
-          placeholder="Pesquise por ofertas" 
-          #termoDaPesquisa
-          (keyup)="pesquisa(termoDaPesquisa.value)"
-          >
-
-          <ul class="list-group" style="position: absolute; z-index: 999">
-            <li class="list-group-item" *ngFor="let oferta of ofertas | async">
-              <a [routerLink] = "['/oferta', oferta.id]" (click)="limpaPesquisa()">
-                {{oferta.titulo | descricaoReduzida: 15| uppercase}}
-              </a>
-            </li>
-          </ul>
+        <div class="col-md-6" style="max-height: 1px;">
+          <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar ofertas..." 
+            #termoPesquisa (input)="pesquisa(termoPesquisa.value)">
+            <ul class="list-group float-right" *ngIf="termoPesquisa.value.length > 2">
+              <li class="list-group-item" *ngFor="let oferta of ofertas">
+                <a class="_a" [routerLink]="['/oferta', oferta.id]" (click)="termoPesquisa.value = ''">
+                  {{ oferta.descricao_oferta | descricaoReduzida}}
+                </a>
+              </li>
+            </ul>
         </div>
         <div class="col-md-2">
           <a a routerLink="/ordem-compra"><img src="../../assets/carrinho.png" /></a>
-        </div>
       </div>
-
-
+      </div>
     </div>
   </nav>
 
