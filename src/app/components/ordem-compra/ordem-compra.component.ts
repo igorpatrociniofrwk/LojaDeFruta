@@ -6,6 +6,8 @@ import { OrdemCompraService } from 'src/app/services/ordem-compra.service';
 import { CarrinhoService } from 'src/app/services/carrinho.service';
 import { ItemCarrinho } from '../shared/item.carrinho.model';
 
+import { ReplaySubject } from 'rxjs';
+
 @Component({
   selector: 'app-ordem-compra',
   templateUrl: './ordem-compra.component.html',
@@ -13,6 +15,8 @@ import { ItemCarrinho } from '../shared/item.carrinho.model';
   providers: [OrdemCompraService]
 })
 export class OrdemCompraComponent implements OnInit {
+
+  observable$: ReplaySubject<any>;
 
   public idPedidoCompra: number;
   public itensCarrinho: ItemCarrinho[] = [];
