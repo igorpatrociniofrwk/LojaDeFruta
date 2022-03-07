@@ -1,9 +1,11 @@
 import { Oferta } from './../components/shared/oferta.model';
 import { ItemCarrinho } from '../components/shared/item.carrinho.model'; 
-import { ReplaySubject } from 'rxjs';
+import { ReplaySubject, Observable } from 'rxjs';
 
 class CarrinhoService {
     public itens: ItemCarrinho[] = []
+
+    public totalReal = new ReplaySubject<number>()
 
     public exibirItens(): ItemCarrinho[] {
         return this.itens
@@ -26,26 +28,25 @@ class CarrinhoService {
             this.itens.push(itemCarrinho)
         }
 
+        this.atualizarTotal()
+
     }
-    public totalCarrinhoCompras(): any {
+    public atualizarTotal(): void {
 
         let total: number = 0;
-
-        const totalReal = new ReplaySubject(1)
 
         this.itens.forEach((item: ItemCarrinho) => {
            total = total + (item.valor * item.quantidade)
         });
 
-        totalReal.next(1);
-        totalReal.subscribe(console.log);
+        this.totalReal.next(total);
 
-        return totalReal;
     }
     public adicionarQuantidade(itemCarrinho: ItemCarrinho): void {
         let itemCarrinhoEncontrado = this.itens.find((item: ItemCarrinho) => item.id === itemCarrinho.id)
         if(itemCarrinhoEncontrado){
             itemCarrinhoEncontrado.quantidade += 1
+            this.atualizarTotal()
         }
     }
 
@@ -57,7 +58,12 @@ class CarrinhoService {
             if(itemCarrinhoEncontrado.quantidade === 0) {
                 this.itens.splice(this.itens.indexOf(itemCarrinhoEncontrado),1)
             }
+            this.atualizarTotal()
         }
+    }
+
+    public TotalObservable(): Observable<number>{
+        return this.totalReal.asObservable()
     }
 
     public limparCarrinho(): void {

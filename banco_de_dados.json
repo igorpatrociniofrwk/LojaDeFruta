@@ -180,6 +180,25 @@
         }
       ],
       "id": 3
+    },
+    {
+      "endereco": "ashgdhays",
+      "numero": "8272",
+      "complemento": "a",
+      "formaPagamento": "dinheiro",
+      "itens": [
+        {
+          "id": 4,
+          "img": {
+            "url": "/assets/ofertas/4/img1.jpg"
+          },
+          "titulo": "Alface",
+          "descricao_oferta": "Alface fresquinho para consumo.",
+          "valor": 4.9,
+          "quantidade": 4
+        }
+      ],
+      "id": 4
     }
   ]
 }

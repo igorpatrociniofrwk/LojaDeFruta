@@ -37,7 +37,7 @@ export class OrdemCompraComponent implements OnInit {
 
   ngOnInit() {
     this.itensCarrinho = this.carrinhoService.exibirItens();
-    this.totalCarrinho = this.carrinhoService.totalCarrinhoCompras();
+    this.carrinhoService.TotalObservable().subscribe((Total)=>this.totalCarrinho = Total);
     
     if(this.itensCarrinho.length == 0) {
       this.formulario = new FormGroup({
